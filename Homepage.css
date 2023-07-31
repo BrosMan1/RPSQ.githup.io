@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('Design/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+}
+
+p{
+  font-family: Roboto;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.rpsq {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  position: relative; 
+}
+
+.group1 {
+  padding-top: 10px;
+  width: 170px;
+  order: -1; 
+  
+}
+
+.group1-1{
+  color: white;
+  font-size: 23px;
+  position: absolute; 
+  top: 25px; 
+  left: 320px; 
+  transform: translateY(-50%); 
+  padding-right: 20px;
+}
+
+.group1-2{
+  color: white;
+  font-size: 23px;
+  position: absolute; 
+  top: 25px; 
+  left: 480px; 
+  transform: translateY(-50%); 
+  padding-right: 20px;
+}
+
+.group1-3{
+  color: white;
+  font-size: 23px;
+  position: absolute; 
+  top: 25px; 
+  left: 615px; 
+  transform: translateY(-50%); 
+  padding-right: 20px;
+}
+
+.group1-4{
+  color: white;
+  font-size: 23px;
+  position: absolute; 
+  top: 25px; 
+  left: 820px; 
+  transform: translateY(-50%); 
+  padding-right: 20px;
+}
+
+
+.group2{
+  width: 100px;
+  position: absolute; 
+  top: 45px; 
+  right: 0; 
+  transform: translateY(-50%); 
+  padding-right: 20px;
+}
+
+.group3 {
+  padding-top: 70px;
+  padding-left: 25px;
+  width: 300px;
+}
+
+.group4 {
+  width: 550px;
+  position: absolute; 
+  top: 60%; 
+  right: 0; 
+  transform: translateY(-50%); 
+  padding-right: 20px;
+}
+
+.group5 {
+  padding-top: 30px;
+  width: 350px;
+  padding-left: 60px;
+}
+
+.play{
+  justify-content: center;
+  display: flex;
+  
+}
+
+.clickplay {
+  padding-top: 65px;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.clickplay:hover{
+  filter: brightness(70%);
+}

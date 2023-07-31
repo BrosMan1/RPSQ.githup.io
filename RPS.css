@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('Design/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+}
+
+.rock{
+  padding-left: 30px;
+  cursor: pointer;
+  border-radius:0%;
+}
+
+.rock:hover{
+  filter: brightness(80%);
+}
+
+.paper{
+  padding-left: 30px;
+  cursor: pointer;
+  border-radius:0%;
+}
+
+.paper:hover{
+  filter: brightness(80%);
+}
+
+.scissor{
+  padding-left: 30px;
+  cursor: pointer;
+  border-radius:0%;
+}
+
+.scissor:hover{
+  filter: brightness(80%);
+}
+
+.rps{
+  display: flex;
+  flex-direction: column;
+}
+
+.wtl{
+  color: aliceblue;
+}

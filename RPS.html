@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Rock Paper Scissors</title>
+      <style>
+        @keyframes slideIn {
+          0% { opacity: 0; transform: translateX(-100%); }
+          100% { opacity: 1; transform: translateX(0); }
+        }
+
+        .fade-and-slide-in {
+          animation: slideIn 1s ease;
+        }
+      </style>
+      <link rel="stylesheet" href="RPS.css">
+  </head>
+  <body>
+    <div class="rps">
+    <div>
+      <img class="rock" src="Design/Rock.png" onclick="playGame('rock');">
+    </div>
+    <div>
+      <img class="paper" src="Design/Paper.png" onclick="playGame('paper');">
+    </div>  
+    <div>
+      <img class="scissor" src="Design/Scissor.png" onclick="playGame('scissors');">
+    </div>  
+      </div>
+      <div id="score">
+        
+<div id="score">
+  <p style="color: white;">Wins: <span id="winCount">0</span></p>
+  <p style="color: white;">Ties: <span id="tieCount">0</span></p>
+  <p style="color: white;">Losses: <span id="loseCount">0</span></p>
+</div>
+   <script>
+    document.body.classList.add("fade-and-slide-in");
+  </script>
+   <script src="RPS.js"></script>
+
+    </body>
+</html>

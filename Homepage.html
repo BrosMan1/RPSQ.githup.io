@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="Homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700& display=swap" rel="stylesheet">
+    <style>
+      
+      @keyframes slideOut {
+        0% { opacity: 1; transform: translateX(0); }
+        100% { opacity: 0; transform: translateX(100%); }
+      }
+
+      
+      .fade-and-slide-out {
+        animation: slideOut 1s ease;
+      }
+
+      
+      @keyframes slideIn {
+        0% { opacity: 0; transform: translateX(-100%); }
+        100% { opacity: 1; transform: translateX(0); }
+      }
+
+      
+      .fade-and-slide-in {
+        animation: slideIn 1s ease;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+    <div class="body">
+      <div class="top"><img class="group1" src="Design/Group 1.png">
+        <p class="group1-1">Home</p>
+        <p class="group1-2">Rule</p>
+        <p class="group1-3">Community</p>
+        <p class="group1-4">About</p>
+        <img class="group2" src="Design/Group 2.png">
+      </div>
+      <div class="rpsq"><img class="group3" src="Design/Group 3.png"><img class="group4" src="Design/Logo 2.png">
+      <img class="group5" src="Design/RPS.png">
+    </div>
+    <div class="play">
+       <img class="clickplay" id="playbutton" src="Design/Group 4.png">
+      </button>
+    </div>
+      </div>
+      <script>
+        document.querySelector(".clickplay").addEventListener("click", function() {
+          document.body.classList.add("fade-and-slide-out");
+  
+          setTimeout(function() {
+            window.location.href = "RPS.html";
+          }, 1000); 
+        });
+      </script>
+    
+  </body>
+</html>
